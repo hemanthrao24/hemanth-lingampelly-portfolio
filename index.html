@@ -1,101 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Java Full Stack Developer | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Hemanth | Software Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-    <img src="images/profile.jpg" alt="Aaaa Profile Photo" class="profile-pic">
-    <h1>Hemanth Lingampelly</h1>
-    <p class="title">Java Full Stack Developer</p>
-    <p>Spring Boot | Angular | SQL | Microservices </p>
-</header>
-
-
-<nav>
+  <!-- Floating Navigation -->
+  <nav class="floating-navbar">
+    <a href="#home" class="active">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-</nav>
+  </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a Java Full Stack Developer with 3.5+ years of experience in building
-        scalable enterprise applications using Java, Spring Boot, Angular, and SQL.
-        I have hands-on experience in microservices, REST APIs, and database design.
-    </p>
-</section>
+  <!-- PAGE 1 : HERO -->
+  <section id="home" class="page hero">
+    <div class="hero-left">
+      <h1>Hemanth Lingampelly</h1>
+      <h2>Software Developer</h2>
+      <p>
+		“Life is about solving problems.
+		Technology empowers us to solve them from anywhere,
+		and to grow by building, learning, and innovating continuously.”
+      </p>
+      <button onclick="scrollToSection('about')">Get Started</button>
+    </div>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills">
-        <li>Java</li>
-        <li>Spring Boot</li>
-        <li>Microservices</li>
-        <li>Hibernate / JPA</li>
-        <li>Angular</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>MySQL, Oracle, MS SQL</li>
-        <li>Git, Maven</li>
-		<li>Python</li>
-		<li>PySpark</li>
-        <li>DevOps</li>
-    </ul>
-</section>
+    <div class="hero-right">
+      <img src="images/profile.jfif" alt="Hemanth Profile">
+    </div>
+  </section>
 
-<section id="experience">
-    <h2>Experience</h2>
-    <div class="card">
+  <!-- PAGE 2 : ABOUT -->
+  <section id="about" class="page content-page">
+    <div class="content-wrapper">
+      <div class="split">
+        <div class="box glow">
+          <h2>About Me</h2>
+          <p>
+			Java Full Stack Developer with 3.5 years of experience in building enterprise-grade applications using 
+			clean architecture principles, RESTful APIs, and scalable system design.
+			I have hands-on experience in designing and maintaining data pipelines, along with a solid understanding 
+			of DevOps practices that support reliable application deployment and monitoring. I consistently follow 
+			software development best practices, focusing on code quality, performance optimization, and maintainability
+			while collaborating effectively with cross-functional teams.
+          </p>
+        </div>
+
+        <div class="box glow">
+          <h2>Qualification</h2>
+          <ul>
+            <li>B.Tech – Civil Engineering - 2021</li>
+            <li>Java Full Stack Certification</li>
+            <li>Microservices & Cloud Training</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 3 : SKILLS -->
+  <section id="skills" class="page content-page">
+    <div class="content-wrapper">
+      <h2 class="center">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">☕ Java</div>
+        <div class="skill">🌱 Spring Boot</div>
+        <div class="skill">🧩 Microservices</div>
+        <div class="skill">🅰 Angular</div>
+        <div class="skill">🗄 SQL</div>
+        <div class="skill">🐍 Python</div>
+        <div class="skill">⚡ PySpark</div>
+        <div class="skill">🐳 DevOps</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 4 : EXPERIENCE -->
+  <section id="experience" class="page content-page">
+    <div class="content-wrapper">
+      <h2 class="center">Experience</h2>
+      <div class="card glow">
         <h3>Java Full Stack Developer</h3>
-        <p><strong>Company:</strong> Cotiviti India</p>
-        <p><strong>Experience:</strong> 3.5+ Years</p>
+        <p><strong>Cotiviti India</strong> | 3.5+ Years</p>
         <p>
-            Worked on backend services using Spring Boot and frontend using Angular.
-            Developed REST APIs, handled database design, and optimized performance.
+          Developed scalable backend services, Angular UIs,
+          REST APIs, and optimized database performance.
         </p>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+  <!-- PAGE 5 : PROJECTS -->
+  <section id="projects" class="page content-page">
+    <div class="content-wrapper">
+      <h2 class="center">Projects</h2>
+      <div class="projects">
+        <div class="card glow">
+          <h3>Healthcare Claims System</h3>
+          <p>Java | Spring Boot | Angular</p>
+        </div>
 
-    <div class="card">
-        <h3>Healthcare Claims Processing System</h3>
-        <p><strong>Tech:</strong> Java, Spring Boot, Angular, MySQL</p>
-        <p>
-            Developed end-to-end healthcare claims processing application with
-            role-based access, reporting, and performance optimization.
-        </p>
+        <div class="card glow">
+          <h3>Employee Management System</h3>
+          <p>Spring Boot | REST APIs</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-        <h3>Employee Management System</h3>
-        <p><strong>Tech:</strong> Spring Boot, REST API, Angular</p>
-        <p>
-            Built CRUD-based employee management system with authentication
-            and pagination support.
-        </p>
+  <!-- PAGE 6 : CONTACT -->
+  <section id="contact" class="page content-page">
+    <div class="content-wrapper">
+      <h2 class="center">Contact</h2>
+      <div class="contact-box glow">
+        <p>📧 aaaa@gmail.com</p>
+        <p>🔗 linkedin.com/in/aaaa</p>
+        <p>💻 github.com/aaaa</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: aaaa@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/aaaa</p>
-    <p>GitHub: github.com/aaaa</p>
-</section>
-
-<footer>
-    <p>© 2026 Hemanth | Java Full Stack Developer</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
